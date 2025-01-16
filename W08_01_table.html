@@ -1,24 +1,22 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
+  <title>Student List</title>
+  <style>
+    table,th,td{
+        width: 500px;
+        border: 1px solid rgb(5, 33, 12);
+        border-spacing: 0px;
+    }
+    th{
+        background-color: rgb(230, 254, 148);
+    }
+    td{
+        text-align: center;
+        padding: 0px;
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <Style>
-table ,th,td{
-  width: 500px;
-  border: 1px solid rgb(0, 0, 0);
-  border-spacing: 2px;
-}
-th {
-  background-color: rgb(255, 237, 179);
-}
-td {
-  text-align: center;
-  padding: 0px;
-}
-    </Style>
+    }
+  </style>
 
 
 </head>
@@ -26,14 +24,14 @@ td {
   <h1>Basic Table</h1>
   <h3>Student List</h3>
   <!-- Start Code Here -->
-<table border="1" width = 80%>
-  <tr>
-<th>Name</th>
-<th>class</th>
-<th>Grade</th>
+ <table border = "1" width = "80%" >
+<tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Grand</th>
 </tr>
-  <tr>
-<td>ประยุทธ์ จันทร์โอชา</td>
+<tr>
+ <td>ประยุทธ์ จันทร์โอชา</td>
 <td>66/45</td>
 <td>A</td>
 </tr>
@@ -49,14 +47,16 @@ td {
 </tr>
 </table>
 
-  
   <!-- End Code Here -->
 
   <hr>
 
   <h1>Table with Colspan and Rowspan</h1>
   <h3>Food Menu</h3>
-  <table border ="1" width = "500px" cellpadding = "5" cellspacing = "0"> 
+  
+   
+  <!-- Start Code Here -->
+<table border="1" wtdth = "500px" cellpadding="5" cellspacing="0" style="text-align: center;">
     <tr>
       <th>Day</th>
       <th>Breakfast</th>
@@ -70,25 +70,23 @@ td {
       <td>Pasta</td>
     </tr>
     <tr>
-      <td rowspan="2" bgcolor="yellow">Tuesday</td>
-      <td>Pancakes</td>
-      <td rowspan="2" bgcolor="pink">Sandwich</td>
-      <td>Soup</td>
+        <td rowspan="2" 
+         bgcolor="yellow">Tuesday</td>
+        <td>Pancakes</td>
+        <td rowspan="2" bgcolor="gree">Sandwich</td>
+        <td>Soup</td>
+    </tr>
+     
+    <td>Omelette</td>
+    <td>Steak</td>
+    <tr>
+        <td>Wednesday</td>
+        <td colspan="3" bgcolor="pink">Pizza</td>
     </tr>
     <tr>
-      <td>Omelette</td>
-      <td>Steak</td>
+        <td colspan="4" style="text-align: center;" bgcolor="skyblue">Special Dinner: Friday BBQ Night!</td>
+        
     </tr>
-       <tr>
-      <td>Wednesday</td>
-      <td colspan="3" bgcolor="green">Pizza</td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"bgcolor = "skyblud">Spacial Dinner: Friday BBQ Night</td>
-    </tr>
-
-  <!-- Start Code Here -->
-
 
   <!-- End Code Here -->
   </table>
@@ -122,12 +120,10 @@ td {
 
 
   <hr>
-
+<a href="index.html">back to home</a>
 
   
-<div class="back-to-home">
-    <a href="index.html">Back to Home</a>
-  </div>
+
 
 </body>
 </html>
