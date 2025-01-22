@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>HTML form</h1>
+    <h3>input Element</h3>
+    <p>An <span style="color: rgb(255, 0, 0);">input element</span> can be displayed in many ways, depending on the <span style="color: aqua;">type</span> attribute.</p>
+
+
+    <form action="" method="">
+        <fieldset style="background-color: rgb(0, 255, 174);">
+            <legend>Text Field</legend>
+            <label for="fname">Name</label>
+            <input type="text" placeholder="กรุณาป้อนชื่อ"required id="fname" name="fname"><br><br>
+
+            <label for="fLast">Last Name</label>
+            <input type="text" placeholder="กรุณาป้อนนามสกุล"required id="fLast" name="fLast"><br><br>
+
+            <label for="femail">email</label>    
+            <input type="text" placeholder="กรุณาป้อนอีเมล"required id="femail" name="femail"><br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="" id="age" min="0" max="10"><br><br>
+
+            <label for="age">Age Readonly</label>
+            <input type="number" name="" id="age" value="0224236248" readonly><br><br>
+
+            <label for="HBD">Birtday</label>
+            <input type="date"><br><br>
+
+            <label for="url">Website</label>
+            <input type="url"><br><br>
+
+            <input type="submit" value="ตกลง">
+            <input type="reset" value="ยกเลิก">
+        </fieldset>
+
+        <fieldset>
+            <legend>Login</legend>
+            <form>
+            <input type="text" placeholder="Usename"><br><br>
+
+            <input type="password" placeholder="password"><br><br>
+            
+            <input type="submit" value="Sing in">
+            </form>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio Button</legend>
+            <form action="">
+                <label>Gender:</label>
+                <input type="radio" value="M" id="male" name="gender">
+                <label for="male">ผู้ชาย</label>
+                <input type="radio" value="F" id="Female" name="gender">
+                <label for="Female">ผู้หญิง</label>
+
+                <button type="submit">OK</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Chack box</legend>
+            <form action="">
+            <p>เลือกภาษาที่ชอบ</p>
+            <input type="checkbox" value="HTML" name="laguage">
+            <label for="">HTML</label>
+
+             <input type="checkbox" value="CSS" id="CSS" name="laguage">
+            <label for="">CSS</label>
+
+             <input type="checkbox" value="JavaScript" id="JavaScript" name="laguage">
+            <label for="">JavaScript</label> 
+
+            <button type="submit">ยืนยัน</button>
+        </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select...Option[Drodown list]</legend>
+            <form action="">
+                <label for="province">Province</label>
+                <select name="province" id="province">
+                    <option value="benkok">กรุงเทพ</option>
+                    <option value="Sakon Nakhon">สกลนคร</option>
+                    <option value="Chiang Rai">เชียงราย</option>
+                </select>
+                <br><br>
+                <input type="submit">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Text area</legend>
+            <form action="">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="50" role="50" rows="5"></textarea><br><br>
+                <input type="submit">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Uplord File</legend>
+            <form action="">
+                <label for="">ไฟล์เเนบ :</label>
+                <input type="file" name="attach"><br><br>
+
+                <label for="">ตัวเลือกสี :</label>
+                <input type="color"><br><br>
+
+                <button type="button" onclick="alert"(Hello world)
+            </form>
+        </fieldset>
+
+    </form>
+    <a href="index.html">back to home</a>
+
+
+</body>
+</html>
