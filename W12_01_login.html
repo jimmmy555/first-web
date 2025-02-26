@@ -62,7 +62,7 @@ background: linear-gradient(90deg, rgba(224,17,216,1) 6%, rgba(4,237,255,1) 21%,
             }
         }
         .right-side h2 {
-    text-align: center; 
+    text-align: center; /* ทำให้ข้อความ Login อยู่ตรงกลาง */
     width: 100%;
 }
         button{
@@ -144,7 +144,7 @@ background: linear-gradient(90deg, rgba(224,17,216,1) 6%, rgba(4,237,255,1) 21%,
             // ตรวจสอบว่าข้อมูลที่ป้อนตรงกับค่าที่กำหนดไว้หรือไม่ (username: "admin", password: "1234")
             if (username === "admin" && password === "1111") {
                 //alert("เข้าสู่ระบบสำเร็จ!"); // แจ้งเตือนผู้ใช้ว่าล็อกอินสำเร็จ
-                window.location.href = "W13_01_WebResponsive.html"; // เปลี่ยนหน้าไปยังเป้าหมาย"
+                window.location.href = "W13_01_webResponsive.html"; // เปลี่ยนหน้าไปยังเป้าหมาย"
             } else {
                 errorMsg.textContent = "Username หรือ Password ไม่ถูกต้อง"; // แสดงข้อความ error เมื่อป้อนข้อมูลผิด
             }
