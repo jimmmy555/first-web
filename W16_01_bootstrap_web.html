@@ -199,7 +199,166 @@
   </ul>
   </div>
 </div>
+<!--Table Section-->
+<div class="container-fluid bg-body-secondary mb-5 ">
+  <div class="container py-3 ">
+      <div class="card my-4 p-5 m-auto"> 
+          <h1 class="text-uppercase text-center text-bg-success">Members</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam deserunt ullam, fuga ab, illo praesentium beatae quaerat porro accusamus harum quo doloremque repudiandae deleniti tenetur officiis suscipit quos omnis.</p>
+          
+          <!--create table-->
+          <table class="table table-hover">
+              <thead>
+      <tr class="table-dark">
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+      <th scope="col">Photo</th>
+      </tr>
+      </thead>
+  <tbody class="table-group-divider">
+      <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td><img src="images/Rabbit.33.jpg" alt=""class=" img-thumbnail img-size clickable-image"></td>
+      </tr>
+      <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td><img src="images/Rabbit.33.jpg" alt=""class=" img-thumbnail img-size clickable-image"></td>
+      </tr>
+      <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td><img src="images/Rabbit.33.jpg" alt=""class=" img-thumbnail img-size clickable-image"></td>
+      </tr>
+  </tbody>
+  </table>
+      </div>
+  </div>
+</div>
+<!--Contect Section-->
+<div class="container-fluid">
+  <div class="container bg-danger">
+      <div class="row">
+          <div class="col-md-6">
+              <h1 >Contact Us</h1>
+              <p>Lorem ipsum dolor sit amet. </p>
+              <p>Address: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro enim sunt officiis harum, tenetur odit consequuntur. Suscipit sed culpa fuga saepe adipisci, unde totam beatae dignissimos repellendus, magnam, quidem maiores.</p>
+              <p>phone:0565125485</p>
+          </div>
+          <div class="col-md-6">
+              <form id="contactForm">
+                  <div>
 
+                      <label for="name"class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name">
+                      
+                  </div>
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+<div class="mb-3">
+  <label for="exampleInputPassword1" class="form-label">Message</label>
+  <textarea name="message" id="message" rows="4" class="form-control"></textarea>
+</div>
+
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<footer class="bg-dark text-white d-flex row align-items-center justify-content-center text-center p-5">
+      <p>&copy; 2025 CASTORICE. All Rights Reserved.</p>
+      <p>information Technology Program.  Science and Technology Faculty.</p>
+      <p>Nakhon Pathom Rajabhat University</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script>
+  //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+
+  document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+      img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+
+          Swal.fire({
+              title: 'jimmy',
+              imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+              imageWidth: 500, // ขนาดรูปที่ขยาย
+              imageHeight: 'auto',
+              imageAlt: img.alt, // ใช้ alt ของรูป
+              showCloseButton: true,
+              confirmButtonText: 'ปิด'
+          });
+      });
+  });
+</script>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+          Swal.fire({
+              title: 'Success!',
+              text: 'Your message has been sent.',
+
+              //text: 'Your message has been sent.\n\n' +
+              //'Name: ' + name + '\n' +
+              //'Email: ' + email + '\n' +
+              //'Message: ' + message,
+
+              html: `<p>Your message has been sent.</p>
+              <p><b>Name:</b> ${name}</p>
+              <p><b>Email:</b> ${email}</p>
+              <p><b>Message:</b> ${message}</p>`,
+
+              icon: 'success',
+              confirmButtonText: 'OK',
+
+
+              //showConfirmButton: false,
+              timer: 1500
+
+
+          }).then(() => {
+              // Optional: Reset form after submission
+              document.getElementById('contactForm').reset();
+          });
+      } else {
+          Swal.fire({
+              title: 'Error!',
+              text: 'Please fill out all fields.',
+              icon: 'error',
+              confirmButtonText: 'OK'
+          });
+      }
+  });
+</script>
 
 
 
