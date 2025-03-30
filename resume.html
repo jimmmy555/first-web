@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a; /* Dark background for Halloween vibes */
+  color: #ffffff; /* White text for contrast */
+}
+
+.card-header {
+  background-color: #ff8c00; /* Halloween Orange */
+  color: #ffffff; /* White text */
+  font-weight: 600;
+}
+
+.card-body {
+  background-color: #333333; /* Dark gray background for card body */
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff8c00; /* Halloween Orange for section titles */
+  margin-top: 40px;
+  border-bottom: 2px solid #ff8c00; /* Orange border */
+  padding-bottom: 5px;
+}
+
+.card {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #222222; /* Dark background for cards */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.2);
+}
+
+.card-body a {
+  color: #ff8c00; /* Halloween Orange for links */
+}
+
+.card-body a:hover {
+  color: #cc6600; /* Darker orange on hover */
+}
+
+.btn-primary {
+  background-color: #ff8c00; /* Halloween Orange */
+  border-color: #ff8c00;
+}
+
+.btn-primary:hover {
+  background-color: #cc6600; /* Darker orange on hover */
+  border-color: #cc6600;
+}
+
+.navbar {
+  background-color: #1a1a1a; /* Dark background for navbar */
+}
+
+.navbar-nav a {
+  color: #ff8c00 !important; /* White navbar links */
+  font-weight: 600;
+}
+
+.navbar-nav a:hover {
+  color: #ff8c00 !important; /* Halloween Orange on hover */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .card-header h5 {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+.progress-bar {
+  background-color: #ff8c00; /* Halloween Orange for progress bars */
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="color: #FF8C00;">Resume</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#1">เกี่ยวกับฉัน</a></li>
+          <li class="nav-item"><a class="nav-link" href="#2">ประวัติการศึกษา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#3">กิจกรรม</a></li>
+          <li class="nav-item"><a class="nav-link" href="#4">ทักษะ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#5">Project</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Left Side (Profile Picture & Basic Info) -->
+      <div class="col-md-4 text-center">
+        <h3 class="section-title" id=""></h3>
+        <div class="card">
+          <div class="card-header">
+            <h5>นักศึกษา</h5>
+          </div>
+          <div class="card-body">
+            <img src="onana.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="max-width: 70px; height: auto;">
+            <h2 class="font-weight-bold" style="color: #ff8c00;">นักศึกษาตัวอย่าง</h2>
+            <p class="text-muted">นักศึกษาปริญญาตรี</p>
+            <p><i class="fas fa-map-marker-alt" style="color: #607d8b;"></i> กรุงเทพฯ, ประเทศไทย</p>
+            <p><i class="fas fa-envelope" style="color: #607d8b;"></i> student@example.com</p>
+            <p><i class="fas fa-phone-alt" style="color: #607d8b;"></i> 012-345-6789</p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ .com/" target="_blank" class="btn btn-primary btn-sm"><i class="fab fa-youtube" style="color: #ff0000;"></i> </a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side (About & Education) -->
+      <div class="col-md-8" id="1">
+        <h3 class="section-title"></h3>
+        <div class="card">
+          <div class="card-header">
+            <h5>เกี่ยวกับฉัน</h5>
+          </div>
+          <div class="card-body">
+            <p>สวัสดีค่ะ/ครับ! ฉันเป็นนักศึกษาปริญญาตรีสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัย ABC ที่มีความสนใจในการพัฒนาเว็บไซต์และแอพพลิเคชัน ตลอดเวลาที่เรียน ฉันได้ฝึกฝนทักษะด้านการเขียนโปรแกรมและการออกแบบเว็บไซต์ เพื่อพัฒนาทักษะทางเทคนิคและความคิดสร้างสรรค์ในการพัฒนาโครงการต่างๆ ที่ใช้เทคโนโลยีสมัยใหม่ เช่น HTML5, CSS3, JavaScript และ React</p>
+          </div>
+        </div>
+
+        <h3 class="section-title" id="2"></h3>
+        <div class="card">
+          <div class="card-header">
+            <h5>ประวัติการศึกษา</h5>
+          </div>
+          <div class="card-body">
+            <ul>
+                <li><strong>อนุบาล - มัธยมต้น (ม.3)</strong> - โรงเรียนภาวนาภิมณฑ์พิทยา</li>
+                <li><strong>มัธยมปลาย (ม.4 - ม.6)</strong> - โรงเรียนอู่ทองศึกษาลัย</li>                
+                <li><strong>ปริญญาตรี</strong> - ชิคาโก้ </li>
+                <li><strong>ปริญญาโท</strong> - เมืองเช็ก </li>
+                <li><strong>ปริญญาเอก</strong> - วัดหนองประดู่ </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--กิจกรรม (Card เดียว)-->
+    <h3 class="section-title" id="3">กิจกรรม</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>กิจกรรม</h5>
+            <p class="text-dark">วัดพระธรรมกาย</p>
+          </div>
+          <div class="card-body">
+            <p><strong>ระยะเวลา:</strong> กุมภาพันธ์ 2024 </p>
+            <p><strong>รายละเอียดกิจกรรม:</strong></p>
+            <ul>
+              <li>ถวายภัตตาหารแด่พระภิกษุสงฆ์ในช่วงวันมาฑบูชา </li>
+              <li>เก็บของหลังจากการถวายภัตตาหารเสร็จ เพื่อเตรียมสถานที่สำหรับการปฏิบัติธรรม</li>
+              <li>นั่งฟังพระสวดพระธรรมเทศนาเพื่อเสริมสร้างความเข้าใจในธรรมะ</li>
+              <li>ร่วมทำกิจกรรมที่วัดเพื่อสืบสานประเพณีและส่งเสริมการปฏิบัติธรรมร่วมกับชุมชน</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Combined Skills Section -->
+    <h3 class="section-title" id="4">ทักษะ</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>ทักษะ</h5>
+          </div>
+          <div class="card-body">
+            <h5>ทักษะด้านการเขียนโปรแกรม</h5>
+            <ul>
+              <li class="skill-item">Python <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+              <li class="skill-item">JavaScript <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+              <li class="skill-item">Java <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+            </ul>
+
+            <h5>ทักษะด้านการพัฒนาเว็บ</h5>
+            <ul>
+              <li class="skill-item">HTML5 <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+              <li class="skill-item">CSS <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+              <li class="skill-item">Bootstrap <span class="float-right">15%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 15%"></div>
+              </div>
+            </ul>
+
+            <h5>ทักษะเพิ่มเติม</h5>
+            <ul>
+              <li class="skill-item">Copy <span class="float-right">60%</span></li>
+              <div class="progress mb-3">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification Section -->
+    <h3 class="section-title" id="5">Project</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>Mini Project</h5>
+          </div>
+          <div class="card-body">
+            <p><strong>ชื่อโปรเจค:</strong>  แอปพลิเคชันขายรถยนต์ BEN</p>
+            <p><strong>รายละเอียด:</strong>  แอปพลิเคชันสำหรับการขายรถยนต์ BEN ที่ช่วยให้ผู้ใช้งานสามารถเลือกซื้อรถยนต์ที่ต้องการได้อย่างง่ายดาย โดยมีการแสดงรายละเอียดของรถยนต์แต่ละคัน รวมถึงราคาขาย, คุณสมบัติของรถ, และภาพถ่ายรถยนต์ พร้อมระบบค้นหารถยนต์ตามประเภทและฟังก์ชันการติดต่อกับผู้ขายหรือเจ้าหน้าที่ขาย</p>
+            <p><strong>เทคโนโลยีที่ใช้:</strong> Figma </p>
+          </div>
+        </div>
+      </div>
+      
+<!-- Back to top button -->
+<button id="back-to-top" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("back-to-top");
+  
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+  
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+  </script>
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html> 
